@@ -6,10 +6,19 @@ namespace OOP
     {
         static void Main(string[] args)
         {
-            int num = 1;
-            // 1
-            Method();
-            // 3
+            Human human = new Human();
+            human.Greetings();
+
+            human = new Human("Дмитрий");
+            human.Greetings();
+
+            human = new Human("Дмитрий", 23);
+            human.Greetings();
+
+            Human human2 = new Human { name = "Дмитрий", age = 23 };
+            human2.Greetings();
+
+            Console.ReadKey();
         }
 
         static void Method()
