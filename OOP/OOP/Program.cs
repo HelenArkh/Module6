@@ -6,17 +6,13 @@ namespace OOP
     {
         static void Main(string[] args)
         {
-            Human human = new Human();
-            human.Greetings();
+            User user = new User();
 
-            human = new Human("Дмитрий");
-            human.Greetings();
+            // Setter
+            user.Age = 15;
 
-            human = new Human("Дмитрий", 23);
-            human.Greetings();
-
-            Human human2 = new Human { name = "Дмитрий", age = 23 };
-            human2.Greetings();
+            // Getter
+            Console.WriteLine(user.Age);
 
             Console.ReadKey();
         }
